@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="ningi_turquoise">#1E4C56</color>
+
     <style name="Theme.Ningi" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_foreground</item>
+        <item name="windowSplashScreenBackground">@color/ningi_turquoise</item>
+        <item name="postSplashScreenTheme">@style/Theme.Ningi</item>
+    </style>
+
 </resources>
