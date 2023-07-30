@@ -4,7 +4,9 @@
     <string name="documents">Documents</string>
     <string name="chat">Chat</string>
     <string name="settings">Settings</string>
-    <string name="basic_notification">Show Basic Notification (15s)</string>
-    <string name="advanced_notification">Show Advanced Notification (15s)</string>
+    <string name="basic_notification">Show Notification</string>
+    <string name="notification_title">New document to sign</string>
+    <string name="notification_message">You have received a new document that requires your signature.</string>
+    <string name="channel_name">Documents</string>
 
 </resources>
