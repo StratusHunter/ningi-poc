@@ -8,5 +8,8 @@
     <string name="notification_title">New document to sign</string>
     <string name="notification_message">You have received a new document that requires your signature.</string>
     <string name="channel_name">Documents</string>
+    <string name="chat_1">Hello this is Pete your Ningi support for today. How can I help?</string>
+    <string name="chat_2">Hello. I would like help to reduce my tax bill using my pension</string>
+    <string name="chat_3">Certainly! Have you considered using a SIPP before?</string>
 
 </resources>
