@@ -13,3 +13,6 @@ val NingiParagraph = Color(0xFF54555F)
 
 val OffBlack = Color(0xFF1C1B1F)
 val OffWhite = Color(0xFFFFFBFE)
+
+val PositiveColor = Color(0xFF5BB974)
+val NegativeColor = Color(0xFFEC493A)

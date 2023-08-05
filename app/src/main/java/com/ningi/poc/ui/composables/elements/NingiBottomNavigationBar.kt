@@ -10,12 +10,12 @@ import androidx.compose.ui.res.stringResource
 import com.ningi.poc.enums.BottomNavigationBarItem
 
 @Composable
-fun BottomNavigationBar(
+fun NingiBottomNavigationBar(
     selectedItem: BottomNavigationBarItem,
     items: Array<BottomNavigationBarItem>,
     onItemClick: (BottomNavigationBarItem) -> Unit
 ) {
-    NavigationBar() {
+    NavigationBar {
         items.forEach { item ->
             val text = stringResource(id = item.text)
             NavigationBarItem(
