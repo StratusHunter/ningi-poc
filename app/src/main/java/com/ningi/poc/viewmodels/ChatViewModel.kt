@@ -7,23 +7,12 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ningi.poc.R
+import com.ningi.poc.classes.ChatScreenState
+import com.ningi.poc.enums.MessageOwner
+import com.ningi.poc.sealed.ChatItem
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-
-enum class MessageOwner {
-    Send, Response
-}
-
-sealed class ChatItem(val message: String, val owner: MessageOwner) {
-
-    class Typing(owner: MessageOwner) : ChatItem(message = "...", owner = owner)
-    class Message(message: String, owner: MessageOwner) : ChatItem(message = message, owner = owner)
-}
-
-data class ChatScreenState(
-    val chatList: List<ChatItem>,
-)
 
 class ChatViewModel : ViewModel() {
     var state by mutableStateOf(

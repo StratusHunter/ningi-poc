@@ -11,9 +11,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.ningi.poc.enums.MessageOwner
 import com.ningi.poc.ui.composables.elements.ChatBubble
 import com.ningi.poc.viewmodels.ChatViewModel
-import com.ningi.poc.viewmodels.MessageOwner
 
 @Composable
 fun ChatScreen(

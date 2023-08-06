@@ -7,24 +7,31 @@ import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import com.ningi.poc.enums.BottomNavigationBarItem
+import com.ningi.poc.enums.Route
 
 @Composable
 fun NingiBottomNavigationBar(
-    selectedItem: BottomNavigationBarItem,
-    items: Array<BottomNavigationBarItem>,
-    onItemClick: (BottomNavigationBarItem) -> Unit
+    selectedItem: Route,
+    items: List<Route>,
+    onItemClick: (Route) -> Unit
 ) {
     NavigationBar {
         items.forEach { item ->
-            val text = stringResource(id = item.text)
-            NavigationBarItem(
-                colors = NavigationBarItemDefaults.colors(),
-                icon = { Icon(item.icon, contentDescription = text) },
-                label = { Text(text) },
-                selected = selectedItem == item,
-                onClick = { onItemClick(item) }
-            )
+                NavigationBarItem(
+                    colors = NavigationBarItemDefaults.colors(),
+                    icon = {
+                        item.tabIcon?.let {
+                            Icon(it, contentDescription = null)
+                        }
+                    },
+                    label = {
+                        item.title()?.let {
+                            Text(it)
+                        }
+                    },
+                    selected = selectedItem == item,
+                    onClick = { onItemClick(item) }
+                )
         }
     }
 }

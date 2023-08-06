@@ -5,5 +5,4 @@ import com.ningi.poc.classes.Profile
 
 class AccountViewModel(
     val profile: Profile
-) : ViewModel() {
-}
+) : ViewModel()

@@ -15,4 +15,9 @@
     <string name="net_worth">Net Worth: %s</string>
     <string name="i_own">I own: %s</string>
     <string name="i_owe">I owe: %s</string>
+    <string name="my_documents">My documents</string>
+    <string name="to_sign">To sign</string>
+    <string name="needs_signing">Needs signing</string>
+    <string name="open_document">Open document</string>
+    <string name="view_document">View document</string>
 </resources>
