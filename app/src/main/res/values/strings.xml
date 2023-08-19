@@ -20,4 +20,5 @@
     <string name="needs_signing">Needs signing</string>
     <string name="open_document">Open document</string>
     <string name="view_document">View document</string>
+    <string name="save">Save</string>
 </resources>
